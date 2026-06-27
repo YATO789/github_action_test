@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Counter App',
-      theme: ThemeData(
-        primaryColor: Color(0xFF6200EE),
-      ),
+      theme: ThemeData(primaryColor: Color(0xFF6200EE)),
       home: MyHomePage(title: 'カウンターアプリ'),
     );
   }
@@ -123,10 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'ボタンをタップした回数',
-                    style: TextStyle(fontSize: 18),
-                  ),
+                  Text('ボタンをタップした回数', style: TextStyle(fontSize: 18)),
                   SizedBox(height: 16),
                   Text(
                     '$counter',
